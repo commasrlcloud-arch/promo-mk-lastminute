@@ -304,10 +304,47 @@
                 margin: 0 30px;
             }
 
-            /* Evita page break nel mezzo di una sezione */
+            /* Forza forni su pagina 2 */
+            .page-break-before {
+                page-break-before: always;
+                break-before: page;
+            }
             .section {
-                page-break-inside: avoid;
-                break-inside: avoid;
+                padding: 15px 30px 6px;
+            }
+            .product {
+                padding: 8px 12px;
+                margin-bottom: 6px;
+            }
+            .product-img {
+                width: 55px;
+                height: 55px;
+            }
+            .product-code {
+                font-size: 13px;
+            }
+            .product-desc {
+                font-size: 11px;
+            }
+            .product-qty {
+                font-size: 10px;
+            }
+            .section-title {
+                font-size: 14px;
+                margin-bottom: 12px;
+                padding-bottom: 6px;
+            }
+            .header {
+                padding: 15px 30px;
+            }
+            .header img {
+                height: 45px;
+            }
+            .promo-banner {
+                padding: 10px 30px;
+            }
+            .divider {
+                margin: 4px 30px;
             }
         }
     </style>
@@ -419,7 +456,7 @@
         <div class="divider"></div>
 
         <!-- FORNI DA INCASSO -->
-        <div class="section">
+        <div class="section page-break-before">
             <div class="section-title">Forni da Incasso</div>
 
             <div class="product">
